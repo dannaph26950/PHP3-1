@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ProductController;
+    use App\Http\Controllers\AuthorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +28,8 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
     Route::resource('categories', CategoryController::class);
+    Route::resource('authors', CategoryController::class);
+
     Route::resource('dashboard', CategoryController::class);
     Route::resource('customeres', CustomerController::class);
     Route::resource('products',ProductController::class);

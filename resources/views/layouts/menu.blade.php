@@ -27,6 +27,8 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('products.index')}}">Sách</a>
+                </li> <li class="nav-item">
+                    <a class="nav-link" href="{{route('authors.index')}}">Tác Giả</a>
                 </li>
 
             </ul>
